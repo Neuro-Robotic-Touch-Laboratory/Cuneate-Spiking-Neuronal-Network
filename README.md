@@ -19,7 +19,7 @@ Spikes_Segmentation: Segments the spike output of the first layer to be used as 
 
 i) 2nd Layer Folder:
 
-Main_Train_2ndLayer: Implements the cuneate neuron model and synaptic learning protocol. 
+Main_Training_2ndLayer: Implements the cuneate neuron model and synaptic learning protocol. 
 
 Main_Output_2ndLayer: Calculates the spike output of the cuneate neurons after the synaptic learning of each neuron in the network.
 _____________________________________
