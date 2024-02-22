@@ -9,8 +9,8 @@ close all; clear; clc;
 Flag = 1; % Flag = 1 to segment the data for model training, another value to segment the data for calculating the output
 
 % Add path to the directory containing spike data
-addpath('..\1st Layer\Spikes'); % Spikes data path
-dirName = "..\1st Layer\Spikes";
+addpath('..\1st Layer\Output Data\Spikes'); % Spikes data path
+dirName = "..\1st Layer\Output Data\Spikes";
 D = dir(dirName); % Get list of files in the directory
 %% Load indentation data
 Data_name = cell(1, length(D)-2);
@@ -31,9 +31,9 @@ for i=1:length(Data_name)
         PC.Spk_ABS{1}, PC.Spk_ABS{2});
     
     % Segment spike data based on flag value
-    if bool == 1
+    if Flag == 1
         Spikes =  spk(Ind_Start-20:Ind_End+20 , :); % For model training
-        name_s=strcat('Output Data/Spikes Train/',name);
+        name_s=strcat('Output Data/Spikes Training/',name);
         save(name_s, 'Spikes')
     else
         Spikes = spk(end-8020: end, :); % For calculate the model output
