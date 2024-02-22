@@ -4,7 +4,6 @@ clc;
 
 %% 1 st layer - Functional Cuneate Spiking Neural Network
 %% Primary Afferent Models - SA II and PC/FAII
-
 % Reference Article: Functional Cuneate Spiking Neural Network for e-Skin Indentation Localization
 % Authors: A.C.P.R.Costa, M.Filosa, A.B.Soares, C.M.Oddo
 % Institute - Scuola Superiore Sant'Anna & Federal University of Uberlândia.

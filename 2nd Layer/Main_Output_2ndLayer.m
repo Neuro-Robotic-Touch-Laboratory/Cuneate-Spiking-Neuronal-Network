@@ -14,8 +14,6 @@ addpath('..\2nd Layer\Output\Output Training\Output Training 01');
 addpath('..\2nd Layer\Data');
 addpath('..\2nd Layer\Data\Spikes Output')
 
-% Loading data
-
 %% Initial variables
 
 nCN = 1036; % Number of cuneate neurons
