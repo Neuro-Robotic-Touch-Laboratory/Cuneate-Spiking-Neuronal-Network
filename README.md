@@ -65,4 +65,4 @@ _____________________________________
 
 LICENSING
 
-Please read the details in individual files, as they includes some codes that were previously developed by Udaya B Rongala.
+Please read the details in individual files, as they include some codes that were previously developed by Udaya B Rongala.
