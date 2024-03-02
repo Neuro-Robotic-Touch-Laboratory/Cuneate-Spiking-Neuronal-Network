@@ -72,7 +72,7 @@ Please read the details in individual files, as it includes some codes that are 
 _____________________________________
 
 @author Ana Clara Pereira R. da Costa – ana-clara-p@ufu.br
-@author Mariangela Filosa - @santannapisa.it 
+@author Mariangela Filosa - mariangela.filosa@santannapisa.it 
 @author Alcimar Barbosa Soare - alcimar@ufu.br
 @author Calogero Maria Oddo - calogero.oddo@santannapisa.it 
 
