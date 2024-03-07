@@ -68,7 +68,7 @@ _____________________________________
 
 LICENSING
 
-Please read the details in individual files, as it includes some codes that are not authored by us.
+Please read the details in individual files, as it includes some third-party codes.
 _____________________________________
 
 @author Ana Clara Pereira R. da Costa – ana-clara-p@ufu.br
