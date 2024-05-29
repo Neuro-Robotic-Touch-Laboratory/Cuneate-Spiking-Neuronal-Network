@@ -3,11 +3,13 @@
 
 OVERVIEW
 
-Matlab implementation of the cuneate spiking neuronal network model proposed in the paper: "Functional Cuneate Spiking Neuronal Network for e-Skin Contact Localization". The model consists of two neuronal layers, each implemented through a separate code stored in the "1st Layer" and "2nd Layer" folders, respectively, as detailed below.
+Matlab implementation of the cuneate spiking neuronal network model proposed in the paper: "Functional Cuneate Spiking Neuronal Network for e-Skin Contact Localization". The model consists of two neuronal layers, each implemented through a separate code stored in the "1st Layer" and "2nd Layer" folders, respectively, furthermore, the "Plot Results" folder has a script for generating some results presented in the manuscript, as detailed below. 
 
 The "1st Layer" folder contains the codes to: (i) calculate the spiking outputs of the primary afferents; (ii) segment the spike data to be used as input to the second layer.
 
-The "2nd Layer" folder contains the codes to: (i) perform the synaptic learning protocol; (ii) calculate the spiking outputs of the cuneate neurons. 
+The "2nd Layer" folder contains the codes to: (i) perform the synaptic learning protocol; (ii) calculate the spiking outputs of the cuneate neurons.
+
+The "Plot Results" folder contains the code to plot some manuscript results.  
 _____________________________________
 
 FEATURES
@@ -24,7 +26,14 @@ Main_Train_2ndLayer: Implements the cuneate neuron model and the synaptic learni
 
 Main_Output_2ndLayer: Calculates the spiking outputs of the cuneate neurons after the synaptic learning of each neuron in the network.
 
+3) Plot Results/Code folder:
+
+PlotResults_Skin_Error: calculates the prediction errors before and after synaptic learning of the cuneate network and generates some figures. 
+
+RasterPlotFunc: is a function that helps in generating the spikes raster plots.
+
 More details can be found as comments in the code and function files.
+   
 _____________________________________
 
 INSTALLATION
@@ -38,6 +47,20 @@ INPUT DATA
 1st Layer: Tactile data, i.e., wavelength variations of the FBG sensors.  Note: the first layer can be adapted to be used with data from other types of artificial tactile sensors. For testing purposes, some samples of the indentation dataset can be found in the "Data" folder. For access to the full database, please, contact the authors.
 
 2nd Layer: Spikes originating from the first layer of slow-adapting and fast-adapting type 2 mechanoreceptors, and initial excitatory synaptic weights.
+
+Plot Results: Mainly the 2nd layer spikes originated from the model output before and after the synaptic layer. And other data is detailed below:
+- FBGPositions3D.txt: 3D positions of FBG sensors
+- Centroids_SkinRS.txt: Centroid positions of indentations
+- CentroideCN_3D.mat: 3D centroid data of cuneate neurons
+- Skin.mat: E-skin mesh data
+- TrainIndexes.mat: Training and test indexes
+- Contour_Skin.mat: E-skin contour data
+- Skin_Area.mat: E-skin mesh area data
+- CN_Spike_Indentation_X.mat: Cuneate neurons spike data for indentations after synaptic learning
+- CN_Spike_Indentation_Before_X.mat: Cuneate neurons spike data for indentations before synaptic learning
+- Indentation4.mat: Indentation (indexes 4) force data
+- Spike_Indentation_4.mat: Spike data for primary afferents of the indentation4
+  
 _____________________________________
 
 ACKNOWLEDGMENTS
