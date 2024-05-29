@@ -54,7 +54,7 @@ iii) Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq - Bra
 
 iv) Italian Ministry of Enterprises and Made in Italy (MIMIT) through the Industry 4.0 Competence Center on Advanced Robotics and Enabling Digital Technologies and Systems (ARTES4.0)
 
-v) Tuscany Region through the Tuscany Network for Bioelectronic Approaches in Medicine: AI-based predictive algorithms for fine-tuning of electroceutical treatments in neurological, cardiovascular and endocrinological diseases (TUNE-BEAM, H14I20000300002)
+v) Tuscany Region through the Tuscany Network for Bioelectronic Approaches in Medicine: AI-based predictive algorithms for fine-tuning of electroceutical treatments in neurological, cardiovascular, and endocrinological diseases (TUNE-BEAM, H14I20000300002)
  
 vi) Italian Ministry of Universities and Research (MUR);
 
@@ -73,6 +73,6 @@ _____________________________________
 
 @author Ana Clara Pereira R. da Costa – ana-clara-p@ufu.br
 @author Mariangela Filosa - mariangela.filosa@santannapisa.it 
-@author Alcimar Barbosa Soare - alcimar@ufu.br
+@author Alcimar Barbosa Soares - alcimar@ufu.br
 @author Calogero Maria Oddo - calogero.oddo@santannapisa.it 
 
