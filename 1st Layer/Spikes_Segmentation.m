@@ -6,7 +6,7 @@ close all; clear; clc;
 % Authors: A.C.P.R.Costa, M.Filosa, A.B.Soares, C.M.Oddo
 % Institute - Scuola Superiore Sant'Anna & Federal University of Uberlândia
 
-Flag = 1; % Flag = 1 to segment the data for model training, another value to segment the data for calculating the output
+Flag = 2; % Flag = 1 to segment the data for model training, another value to segment the data for calculating the output
 
 % Add path to the directory containing spike data
 addpath('..\1st Layer\Output Data\Spikes'); % Spikes data path
@@ -29,7 +29,7 @@ for i=1:length(Data_name)
     % Concatenate spike data from different primary afferents models
     spk=cat(2,SA2.Spk_ABS{1}(1:end-10,:), SA2.Spk_ABS{2}(1:end-10,:),SA2.Spk_ABS{3}(1:end-10,:),SA2.Spk_ABS{4}(1:end-10,:),...
         PC.Spk_ABS{1}, PC.Spk_ABS{2});
-    
+ 
     % Segment spike data based on flag value
     if Flag == 1
         Spikes =  spk(Ind_Start-20:Ind_End+20 , :); % For model training

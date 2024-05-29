@@ -36,10 +36,6 @@ Iter.FreqName = {'Fq20'};
 % Iter.Ca2pSpine = [6.25 2 10.65 100; 18.75 6 31.95 150; 25 8 42.6 200; 31.25 10 53.25 250];
 % Iter.Ca2pSpineName = {'50p','150p','200p','250p'};
 
-% Synaptic Seed Weight, distribution spread (SW Spread, Table 1)
-Iter.Norm = {'Data/Norm4.mat'};
-Iter.NormName = {'4'}; % Basic CN configuration value
-
 % Seed Weight distribution spread (SW Spread, Table 1)
 % Iter.Norm = {'Data/Norm4.mat','Data/Norm4b.mat','Data/Norm4c.mat',...
 % 'Data/Norm4d.mat','Data/Norm4e.mat'};
@@ -84,8 +80,9 @@ load('OrdemTrain01.mat');
 %% PreProcessed Stimuli Input Data (Input Primary Afferent Spikes)
 % Indentation stimuli (only second indentation phase)
 load('TrainIndexes.mat')
+nFold=1; 
 c=length(TrainIndx{1});
-Ind=TrainIndx{1}(:);
+Ind=TrainIndx{1}(:); % 
 for i=1:c
    name=strcat('Spike_Indentation_',num2str(Ind(i)),'.mat');
    Sti{i}=load(name);
